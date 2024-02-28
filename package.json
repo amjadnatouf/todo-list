@@ -20,8 +20,6 @@
     "react-icons": "^4.4.0"
   },
   "devDependencies": {
-    "@locator/babel-jsx": "^0.4.3",
-    "@locator/runtime": "^0.4.3",
     "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.2.1",
@@ -31,18 +29,5 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "gh-pages": "^4.0.0",
     "vite": "^5.1.4"
-  },
-  "gh-pages-deploy": {
-    "staticpath": "dist",
-    "cname": "nope.org",
-    "prep": [
-      "build-sass",
-      "optimize-img"
-    ],
-    "commit": "a custom commit message",
-    "post": [
-      "clean-source"
-    ],
-    "noprompt": false
   }
 }
