@@ -1,0 +1,78 @@
+.layer {
+  background-color: #00000053;
+  position: absolute;
+  inset: 0;
+}
+
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+}
+.modal-content {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 0.3em;
+  box-shadow: 5px 10px 1rem #11111130, 5px 10px 5rem #33333316;
+}
+@media screen and (max-width: 620px) {
+  .modal-container {
+    width: 90vw;
+    transition: all 0.3s linear;
+  }
+  .modal-footer {
+    gap: 1rem;
+  }
+  .modal-footer .btn-edit {
+    width: 80vw;
+    transition: all 0.3s linear;
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-close {
+  background-color: transparent;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 0.75rem;
+}
+
+.modal-body {
+  margin: 1rem 0;
+}
+.modal-body input {
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+  outline: none;
+  line-height: 20px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.modal-footer .btn-danger {
+  text-transform: capitalize;
+  width: 10rem;
+  height: 1.5rem;
+  display: grid;
+  align-items: center;
+  background: transparent;
+  border-color: transparent;
+  color: #e66b6b;
+  font-size: 0.85rem;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
